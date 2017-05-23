@@ -33,6 +33,8 @@ class Album:
         id:             long
         thumbnail_url:  ""
     }
+    post_url:           ""
+    site_url:           ""
     """
 
     def __init__(self):

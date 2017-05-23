@@ -15,8 +15,9 @@ class Crawler:
 
     def fetch_tag(self):
         """
-        populate an album class (json serializable) with fetched results
-        :return: 
+        just fetch initial post info for each pages
+        call process_response
+        :return: None
         """
         pass
 
@@ -24,18 +25,29 @@ class Crawler:
         """
         this function filter out images/albums has no tag
         for images/albums has tag names longer than 4, strip off those tags 
-        :return: 
+        dump albums to mongodb
+        :return: None
         """
         pass
 
     def fetch_photo_info(self):
-        pass
-
-    def process_photo_info(self):
+        """
+        fetch photo info and complete mongodb entry
+        :return: None
+        """
         pass
 
     def download_photo(self):
+        """
+        query mongodb for photo info
+        download_photos to mongodb 
+        :return: 
+        """
         pass
 
     def run(self):
+        """
+        execute a crawler task
+        :return: None
+        """
         pass
